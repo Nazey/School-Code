@@ -1,0 +1,20 @@
+ChatRequest 1100 A 25 wait
+ChatRequest 1103 B 21 later
+
+that last wait or later parameter means if there are
+no available reps, they will leave if says later, and they will wait if says wait
+
+QuitOnHold 1118 G means that customer G will hang up, move around queue
+
+all events are in chronological order
+
+watch out for times like 115 and 1210
+use mod 100 to get last 2 digits, /100 to get first 2 digits
+
+1pm or 13
+queue for people. available reps, linked list chat sessions
+
+Note that endT ime - assignmentT ime for a chat should be the same as chatDuration for the chat. waitT ime of a chat
+is assignmentT ime - requestT ime of the chat. If multiple events occur at the same timestamp, process the events in this
+order: ChatEnded, ChatRequest, RepAssignment, PutOnHold, TryLater, QuitOnHold, AvailableRepList, MaxWaitTime.
+Sample output is on the course website.

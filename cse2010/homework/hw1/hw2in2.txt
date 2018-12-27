@@ -1,0 +1,12 @@
+ChatRequest 0800 A 15 later
+ChatRequest 0805 B 25 later 
+ChatRequest 0810 C 30 wait
+ChatRequest 0816 D 20 wait  
+PrintAvailableRepList 0816
+ChatRequest 0820 E 15 wait 
+ChatRequest 0821 F 13 wait 
+ChatRequest 0822 G 10 wait
+ChatRequest 0823 H 20 later
+ChatRequest 0825 I 15 wait
+PrintMaxWaitTime 0825
+QuitOnHold 0826 G
