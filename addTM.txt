@@ -1,0 +1,7 @@
+6 abx#
+0  R   0 0 0 1   a b x #   scan right for #
+1  L   2 3 1 4   x x x #   scan left and find a or b, replace a or b with x
+2  L   2 0 2 5   a x x #   if a scan left to find b, replace b with x
+3  L   0 3 3 5   x b x #   if b find a, replace a with x
+4  Y   4 4 4 4   a b x #   accept
+5  N   5 5 5 5   a b x #   reject
